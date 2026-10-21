@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Secrets and local databases
+.env
+backend/.env
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# Uploaded captures stay out of git. The directory itself is kept.
+backend/storage/captures/*
+!backend/storage/captures/.gitkeep
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.log
